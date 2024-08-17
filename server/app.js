@@ -5,6 +5,10 @@ const db = require('./config/db');
 const app = express();
 app.use(bodyParser.json());
 
+const aiRoutes = require('./routes/aiRoutes');
+app.use('/api/ai', aiRoutes);
+
+
 app.get('/', (req, res) => {
     res.send('Welcome to AceAI!');
 });
