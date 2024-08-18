@@ -3,7 +3,7 @@ import openai
 
 app = Flask(__name__)
 
-openai.api_key = 'your_openai_api_key'
+openai.api_key = 'your_openai_api_key here'
 
 @app.route('/summarize', methods=['POST'])
 def summarize():
